@@ -1,0 +1,59 @@
+.modal{
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 10px 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.inner-modal {
+  color: #FFF;
+  cursor: default;
+  left: 50%;
+  position: relative;
+  text-align: center;
+  top: 51%;
+  transition: all 0.4s ease-out;
+  transform: translate(-50%, -50%) scale(0);
+  width: fit-content;
+}
+.inner-modal .modal-image {
+  height: auto;
+  width: 100%;
+}
+.inner-modal .modal-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  transition: all 0.1s ease-in;
+  transform: scale(0.8);
+}
+.inner-modal .modal-arrow:hover {
+  transform: scale(0.9);
+}
+.inner-modal .left-arrow {
+  left: -8%;
+}
+.inner-modal .right-arrow {
+  right: -8%;
+}
+.inner-modal p {
+  line-height: 2;
+}
+
+/* Behavior when modal is on */
+body.modal-on {
+  overflow: hidden;
+}
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.inner-modal.open{
+  transform: translate(-50%, -50%) scale(1);
+}

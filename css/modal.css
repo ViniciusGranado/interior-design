@@ -1,4 +1,4 @@
-.modal{
+.modal {
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
   height: 100%;
@@ -18,28 +18,29 @@
   position: relative;
   text-align: center;
   top: 51%;
-  transition: all 0.4s ease-out;
+  transition: transform 0.4s ease-out;
   transform: translate(-50%, -50%) scale(0);
   width: fit-content;
+  padding: 0 20px;
 }
-.inner-modal .modal-image {
+.modal-image {
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
-.inner-modal .modal-arrow {
+.modal-arrow {
   cursor: pointer;
   position: absolute;
   top: 45%;
-  transition: all 0.1s ease-in;
+  transition: transform 0.1s ease-in;
   transform: scale(0.8);
 }
-.inner-modal .modal-arrow:hover {
+.modal-arrow:hover {
   transform: scale(0.9);
 }
-.inner-modal .left-arrow {
+.left-arrow {
   left: -8%;
 }
-.inner-modal .right-arrow {
+.right-arrow {
   right: -8%;
 }
 .inner-modal p {
@@ -56,4 +57,22 @@ body.modal-on {
 }
 .inner-modal.open{
   transform: translate(-50%, -50%) scale(1);
+}
+
+@media only screen and (max-width: 1000px) {
+  .modal-arrow {
+    opacity: 0.5;
+  }
+  .left-arrow {
+    left: 5%;
+  } 
+  .right-arrow {
+    right: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-arrow {
+    top: 40%;
+  }
 }

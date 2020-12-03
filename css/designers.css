@@ -1,0 +1,46 @@
+.designers-title {
+  font-weight: bolder;
+  padding: 20px 0;
+}
+
+.designers-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.designer-item {
+	background-color: #F1F1F1;
+	width: 32%;
+}
+
+.designer-item img {
+	filter: grayscale(70%);
+	height: auto;
+	width: 100%;
+}
+
+.designer-text {
+	padding: 15px;
+}
+
+.designer-name {
+	font-size: 1.5rem;
+}
+
+.position {
+	color: #606060;
+	margin: 15px 0;
+	opacity: 0.7;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) {
+  .designers-container {
+    flex-direction: column;
+  }
+
+  .designer-item {
+    width: 100%;
+	  margin-bottom: 25px;
+  }
+}

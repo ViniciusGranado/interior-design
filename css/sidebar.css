@@ -1,0 +1,92 @@
+/* SIDEBAR */
+.side-bar{
+  background-color: #F44336;
+  color: #FFF;
+  font-weight: bold;
+  height: 100vh;
+  position: fixed;
+  width: 300px;
+  z-index: 1;
+}
+
+.mobile-button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.375rem;
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  visibility: hidden;
+  width: 100%;
+}
+.company-name{
+  font-size: 24px;
+  padding: 55px 32px 74px;
+}
+.title-span, .menu-link{
+  display: block;
+}
+
+.header-nav {
+  padding: 0 32px;
+}
+.menu-link{
+  font-size: 18px;
+  line-height: 2.7rem;
+}
+.menu-link:hover{
+  background-color: #FFF;
+  color: #000;
+}
+
+/* MOBILE HEADER */
+.mobile-header {
+  align-items: center;
+  background-color: #F44336;
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.hamburguer-button {
+  background: none;
+  border: none;
+  color: #FFF;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-right: 8px;
+  outline: none;
+  padding: 22px 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+.mobile-header h1 {
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 992px) {
+  .side-bar {
+    position: fixed;
+    height: 80px;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-out;
+
+    height: 100vh
+  }
+  .side-bar.active {
+    transform: translateX(0);
+  }
+
+  .mobile-button {
+    visibility: visible;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
+}

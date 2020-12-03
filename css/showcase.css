@@ -1,0 +1,23 @@
+.photos {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.photos > .photo-item {
+  height: auto;
+  opacity: 0.8;
+  margin: 0 auto;
+  transition: opacity 0.1s linear;
+}
+
+.photos > .photo-item:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .photos {
+    grid-template-columns: 100%;
+  }
+}

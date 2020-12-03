@@ -1,0 +1,25 @@
+.input-text {
+	border: 1px solid #DDD;
+  font-size: 1.5rem;
+	height: 43px;
+  margin-bottom: 15px;
+  outline: none;
+  padding: 0 10px;
+	width: 100%;
+}
+
+.submit-button {
+	background-color: #F44336;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 1.0625rem;
+  height: 48px;
+  outline: none;
+	width: 100%;
+}
+.submit-button:hover {
+	background-color: #CCC;
+	color: #000;
+}

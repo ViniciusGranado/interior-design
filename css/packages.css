@@ -1,0 +1,78 @@
+.packages-tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* TABLES */
+.table-container {
+  display: block;
+  width: 49%;
+}
+
+table {
+  background-color: #F1F1F1;
+	column-width: 100%;
+	text-align: center;
+  width: 100%;
+}
+
+.basic-title, .pro-title {
+  color: #FFF;
+  font-size: 25px;
+  height: 100px;
+}
+.basic-title {
+  background-color: #616161;
+}
+.pro-title {
+  background-color: #F44336;
+}
+
+.table-content, .price {
+	border-bottom: 1px solid #DDD;
+	height: 56px;
+}
+
+tfoot .price {
+	height: 121px;
+}
+.value {
+	font-size: 30px;
+}
+.per-room {
+	opacity: 0.6;
+}
+
+.button-td {
+	height: 96px;
+}
+.button {
+	border: none;
+	font-size: 16px;
+  outline: none;
+  padding: 15px 25px;
+}
+.basic-button {
+  background-color: #FFF;
+}
+.pro-button {
+  background-color: #F44336;
+  color: #FFF;
+}
+.button:hover {
+	background-color: #000;
+	color: #FFF;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .packages-tables {
+    flex-direction: column;
+  }
+
+  .table-container {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
